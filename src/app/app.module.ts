@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 
 import {
   MatButtonModule,
-  MatCheckboxModule
+  MatTableModule,
 } from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
 
     MatButtonModule,
-    MatCheckboxModule
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

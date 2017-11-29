@@ -1,3 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-checkbox>Check me!</mat-checkbox>
-<button mat-button>Click me!</button>
+<h1>Moneybook</h1>
+
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+    <!-- title Column -->
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.title }} </mat-cell>
+    </ng-container>
+
+    <!-- Amount Column -->
+    <ng-container matColumnDef="amount">
+      <mat-header-cell *matHeaderCellDef> Amount </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.amount }} </mat-cell>
+    </ng-container>
+
+    <!-- Other value Column -->
+    <ng-container matColumnDef="otherValue">
+      <mat-header-cell *matHeaderCellDef> Value </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.otherValue }} </mat-cell>
+    </ng-container>
+
+    <!-- Other label Column -->
+    <ng-container matColumnDef="otherLabel">
+      <mat-header-cell *matHeaderCellDef> Label </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.otherLabel }} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+
+<!-- <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button>Montly</button>
+    <button mat-button>Add</button>
+  </mat-toolbar-row>
+</mat-toolbar> -->
