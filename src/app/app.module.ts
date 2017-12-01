@@ -15,6 +15,7 @@ import {
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DataLineComponent } from './data-line/data-line.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DataLineComponent } from './data-line/data-line.component';
     HeaderComponent,
     HomePageComponent,
     DataLineComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
