@@ -1,0 +1,8 @@
+<section class="data-line">
+  <div class="title">{{ data.title }}</div>
+  <div *ngIf="!data.isCheckbox; else checkboxAmount" class="amount">{{ data.amount }}</div>
+  <ng-template #checkboxAmount class="amount-checkbox">
+    <mat-checkbox [align]="end">{{ data.amount }}</mat-checkbox>
+  </ng-template>
+  <div class="other">{{ data.other }}</div>
+</section>

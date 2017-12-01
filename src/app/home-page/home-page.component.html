@@ -1,0 +1,31 @@
+<mat-list>
+
+  <mat-list-item *ngFor="let row of data.metrics">
+    <app-data-line [data]="row"></app-data-line>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item *ngFor="let row of data.savings">
+    <app-data-line [data]="row"></app-data-line>
+  </mat-list-item>
+  
+  <mat-divider></mat-divider>
+  
+  <mat-list-item *ngFor="let row of data.summary">
+    <app-data-line [data]="row"></app-data-line>
+  </mat-list-item>
+  
+  <mat-divider></mat-divider>
+  
+  <mat-list-item *ngFor="let row of data.categories">
+    <app-data-line [data]="row"></app-data-line>
+  </mat-list-item>
+
+</mat-list>
+
+<mat-toolbar class="footer">
+  <button mat-raised-button color="warn">Categories</button>
+  <button mat-raised-button color="accent">November</button>
+  <button mat-raised-button color="primary">Add</button>
+</mat-toolbar>
