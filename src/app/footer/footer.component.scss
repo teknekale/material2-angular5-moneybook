@@ -1,0 +1,10 @@
+.footer {
+  background: transparent;
+  padding: 16px 8px;
+  display: flex;
+
+  > button {
+    flex: 1;
+    margin: 0 8px;
+  }
+}
