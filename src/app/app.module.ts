@@ -6,19 +6,35 @@ import { AppComponent } from './app.component';
 
 import {
   MatButtonModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatToolbarModule,
+  MatListModule,
+  MatGridListModule
 } from '@angular/material';
+
+import { HeaderComponent } from './header/header.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { DataLineComponent } from './data-line/data-line.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
+    HeaderComponent,
+    HomePageComponent,
+    DataLineComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
 
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

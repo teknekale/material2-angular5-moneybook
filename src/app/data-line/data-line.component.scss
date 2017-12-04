@@ -1,0 +1,18 @@
+.data-line {
+  display: flex;
+  flex-flow: row;
+  
+  > * {
+    flex: 1 100%;
+  }
+
+  .amount {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .other {
+    font-size: 12px;
+    text-align: right;
+  }
+}
