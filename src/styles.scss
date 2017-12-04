@@ -22,3 +22,13 @@ $money-app-theme: mat-light-theme($money-app-primary, $money-app-accent, $money-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($money-app-theme);
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 600px;
+  margin: auto auto;
+}
